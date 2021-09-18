@@ -8,16 +8,17 @@
     --active-color: #2196F3;
     --footer-address-color: rgba(255, 255, 255, 0.6);
 /* Цвет фона */
---page-background-color: #E5E5E5;
---header-background-color: #FFFFFF;
---footer-background-color:#2F303A;
---section-background-color: #F5F4FA;
+    --page-background-color: #E5E5E5;
+    --header-background-color: #FFFFFF;
+    --footer-background-color:#2F303A;
+    --section-background-color: #F5F4FA;
 }
 
 /* Стили по селекторам тега  */
 
 body {
     font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
     letter-spacing: 0.03em;
 }
 
@@ -29,7 +30,7 @@ body {
 }
 .link {
     text-decoration: none;
-   font-style: normal;
+    font-style: normal;
 }
 
 
@@ -53,7 +54,6 @@ body {
 
 .logo {
     font-family: Raleway;
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.2;
@@ -128,11 +128,8 @@ background-color: var(--footer-background-color);
 }
 
 .benefits-text {
-    font-style: normal;
-    font-weight: normal;
     font-size: 14px;
     line-height: 1.7;
-    color:var(--primary-text-color)
 }
 
 /* Чем мы занимаемся */
@@ -150,6 +147,14 @@ background-color: var(--footer-background-color);
 background-color:var(--section-background-color)
 }
 
+.team-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--secondary-title-color);
+}
+
 .team-item {
 background-color: var(--header-background-color);
 }
@@ -163,33 +168,9 @@ background-color: var(--header-background-color);
 }
 
 .work-position {
-    font-weight: normal;
     font-size: 16px;
     line-height: 11.9;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-}
-/* Footer */
-.footer {
-    background-color: var(--footer-background-color);
-}
-.logo-footer {
-    color: #FFFFFF;;
-    }
-
-.map-link {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--header-background-color)
-}
-
-.address-link {
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--footer-address-color);
 }
 
 /* Портфолио */
@@ -204,8 +185,8 @@ background-color: var(--header-background-color);
     color: var(--secondary-title-color);
 }
 
-.filter-button:focus,
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
     color: var(--header-background-color);
     background-color: var(--active-color);
     cursor: pointer;
@@ -221,8 +202,36 @@ background-color: var(--header-background-color);
 }
 
 .project-text {
-    font-weight: normal;
     font-size: 16px;
     line-height: 1.9;
-    color: var(--primary-text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-background-color);
+}
+.logo-footer {
+    color: #FFFFFF;;
+    }
+
+.map-link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--header-background-color)
+}
+
+.map-link:hover,
+.map-link:focus {
+    color: var(--active-color);
+}
+
+.address-link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--footer-address-color);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--active-color);
 }
